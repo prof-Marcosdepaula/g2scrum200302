@@ -1,6 +1,4 @@
-
-  
-  body {
+body {
     margin: 0%;
   }
 
@@ -17,8 +15,9 @@
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #10a8b3;
+  background-color: #3d919d;
   text-align: center;
+  margin: -8px;
 }
 /* Style the topnav menu */
 .topnav a {
