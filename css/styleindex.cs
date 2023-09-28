@@ -1,3 +1,4 @@
+/* #region Home */
 body {
     margin: 0%;
   }
@@ -33,3 +34,9 @@ body {
   background-color: #ddd;
   color: black;
 }
+
+/* #endregion */
+
+/* #region Carrosel */
+
+/* #endregion */

@@ -2,31 +2,58 @@
 <html lang="br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/styleindex.cs">
+  <link rel="stylesheet" type="text/js" href="./java/javaindex.js">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>Resort</title>
 </head>
+
 <body>
   <div class="header">
-    <h1><img src="./Hotels.png" alt="Denim Jeans" style="width: 100%"</h1>
+    <h1><img src="./Hotels.png" alt="Denim Jeans" style="width: 100%"></h1>
   </div>
-      <div class="topnav">
+  <div class="topnav">
     <a href="#">Dormitórios</a>
     <a href="#">Chalés</a>
     <a href="#">Suítes</a>
     <a href="#">Atrações</a>
-      </div>
-
+  </div>
+  </div>
+  
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./img/img_nature_wide.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./img/img_nature_wide.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./img/img_nature_wide.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <script src="./java/javaindex.js"></script>
 </body>
+
 </html>
 
 </html>
