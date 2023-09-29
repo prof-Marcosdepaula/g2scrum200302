@@ -52,6 +52,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding-top: 8.5px;
 }
 
 /* Next & previous buttons */
