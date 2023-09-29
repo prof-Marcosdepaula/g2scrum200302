@@ -12,6 +12,68 @@
 </head>
 
 <body>
+  <div id="googleMap"></div>
+  <!--
+  Copyright 2023 Google LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+      
+  
+    
+
+    <script>
+      const CONFIGURATION = {
+        "locations": [
+          {"title":"Av. do Folclore, 1543","address1":"Av. do Folclore","address2":"1543 - Jardim Santa Efigênia, Olímpia - SP, 15400-000, Brasil","coords":{"lat":-20.722117426953652,"lng":-48.917367076860046},"placeId":"ElBBdi4gZG8gRm9sY2xvcmUsIDE1NDMgLSBKYXJkaW0gU2FudGEgRWZpZ8OqbmlhLCBPbMOtbXBpYSAtIFNQLCAxNTQwMC0wMDAsIEJyYXppbCIxEi8KFAoSCY8iyHGrb7yUEWlGFRphdtoFEIcMKhQKEgmByG7QU268lBEQPmpR3alu5w"}
+        ],
+        "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+        "mapsApiKey": "YOUR_API_KEY_HERE",
+        "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":false}
+      };
+
+      function initMap() {
+        new LocatorPlus(CONFIGURATION);
+      }
+    </script>
+    <script id="locator-result-items-tmpl" type="text/x-handlebars-template">
+      {{#each locations}}
+        <li class="location-result" data-location-index="{{index}}">
+          <button class="select-location">
+            <h2 class="name">{{title}}</h2>
+          </button>
+          <div class="address">{{address1}}<br>{{address2}}</div>
+          {{#if travelDistanceText}}
+            <div class="distance">{{travelDistanceText}}</div>
+          {{/if}}
+          <a class="directions-button" href="" target="_blank" title="Get directions to this location on Google Maps">
+            <svg width="34" height="34" viewBox="0 0 34 34"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.5867 9.24375L17.9403 8.8902V8.8902L17.5867 9.24375ZM16.4117 9.24375L16.7653 9.59731L16.7675 9.59502L16.4117 9.24375ZM8.91172 16.7437L8.55817 16.3902L8.91172 16.7437ZM8.91172 17.9229L8.55817 18.2765L8.55826 18.2766L8.91172 17.9229ZM16.4117 25.4187H16.9117V25.2116L16.7652 25.0651L16.4117 25.4187ZM16.4117 25.4229H15.9117V25.63L16.0582 25.7765L16.4117 25.4229ZM25.0909 17.9229L25.4444 18.2765L25.4467 18.2742L25.0909 17.9229ZM25.4403 16.3902L17.9403 8.8902L17.2332 9.5973L24.7332 17.0973L25.4403 16.3902ZM17.9403 8.8902C17.4213 8.3712 16.5737 8.3679 16.0559 8.89248L16.7675 9.59502C16.8914 9.4696 17.1022 9.4663 17.2332 9.5973L17.9403 8.8902ZM16.0582 8.8902L8.55817 16.3902L9.26527 17.0973L16.7653 9.5973L16.0582 8.8902ZM8.55817 16.3902C8.0379 16.9105 8.0379 17.7562 8.55817 18.2765L9.26527 17.5694C9.13553 17.4396 9.13553 17.227 9.26527 17.0973L8.55817 16.3902ZM8.55826 18.2766L16.0583 25.7724L16.7652 25.0651L9.26517 17.5693L8.55826 18.2766ZM15.9117 25.4187V25.4229H16.9117V25.4187H15.9117ZM16.0582 25.7765C16.5784 26.2967 17.4242 26.2967 17.9444 25.7765L17.2373 25.0694C17.1076 25.1991 16.895 25.1991 16.7653 25.0694L16.0582 25.7765ZM17.9444 25.7765L25.4444 18.2765L24.7373 17.5694L17.2373 25.0694L17.9444 25.7765ZM25.4467 18.2742C25.9631 17.7512 25.9663 16.9096 25.438 16.3879L24.7354 17.0995C24.8655 17.2279 24.8687 17.4363 24.7351 17.5716L25.4467 18.2742Z" fill="#1967d2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M19 19.8333V17.75H15.6667V20.25H14V16.9167C14 16.4542 14.3708 16.0833 14.8333 16.0833H19V14L21.9167 16.9167L19 19.8333Z" fill="#1967d2"/>
+              <circle class="directions-button-background" cx="17" cy="17" r="16.5" stroke="#e0e0e0"/>
+            </svg>
+          </a>
+        </li>
+      {{/each}}
+    </script>
+  </head>
+ 
   <!-- #region Header -->
   <div class="header">
     <h1><img src="./img/Hotels.png" alt="Denim Jeans" style="width: 100%"></h1>
@@ -26,22 +88,31 @@
     <a href="#">Atrações</a>
   </div>
   <!-- #endregion -->
+  <!-- <section> -->
+    <!-- <div class="mapa"> -->
+    <br>
 
+    <!-- </div> -->
+
+ <!-- </section> -->
+ 
   <!-- #region Cards -->
-  <div class="card">
+  <div class="card1 card">
     <img src="/img/dormitorio1-1.jpg" alt="Dormitorio 1" style="width:100%">
     <div class="container">
       <h4><b>Jane Doe</b></h4>
       <p>Interior Designer</p>
     </div>
   </div>
-  <div class="card">
+  <div class="card1 card">
     <img src="" alt="Dormitorio 2" style="width:100%">
     <div class="container">
       <h4><b>Jane Doe</b></h4>
       <p>Interior Designer</p>
     </div>
   </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14926.858841702202!2d-48.9176384!3d-20.7218064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bc6fab74385651%3A0xf64f5b329d1e135d!2sThermas%20dos%20Laranjais!5e0!3m2!1spt-BR!2sbr!4v1695947340895!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   <div class="card">
     <img src="" alt="Dormitorio 3" style="width:100%">
     <div class="container">
