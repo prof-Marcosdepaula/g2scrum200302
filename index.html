@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./css/styleindex.css">
-  <link rel="stylesheet" type="text/js" href="./java/javaindex.js">
   <title>Resort</title>
+
+  <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/styleindex.css">
 </head>
 
 <body>
@@ -15,6 +16,7 @@
         style="width: 100%"></h1>
   </div>
   <!-- #endregion -->
+
   <!-- #region Menu -->
   <div class="topnav">
     <a href="#">Dormitórios</a>
@@ -23,9 +25,6 @@
     <a href="#">Atrações</a>
   </div>
   <!-- #endregion -->
-  <section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.71483452194!2d-48.92021332545097!3d-20.721801363451473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bc6fab74385651%3A0xf64f5b329d1e135d!2sThermas%20dos%20Laranjais!5e0!3m2!1spt-BR!2sbr!4v1695947271102!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
 
   <!-- #region Carrossel -->
   <div class="slideshow-container">
@@ -63,64 +62,65 @@
   <!-- #endregion -->
 
   <!-- #region Destaque -->
-  <div class="Destaque">
-    <div class="card">
-      <img src="" alt="Dormitorio 1" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
+  <div class="destaque swiper">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+
+        <div class="card-destaque swiper-slide">
+          <img src="" alt="Dormitorio 1" style="width:100%">
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Designer</p>
+          </div>
+        </div>
+
+        <div class="card-destaque swiper-slide">
+          <img src="" alt="Dormitorio 2" style="width:100%">
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Designer</p>
+          </div>
+        </div>
+
+        <div class="card-destaque swiper-slide">
+          <img src="" alt="Suítes 1" style="width:100%">
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Designer</p>
+          </div>
+        </div>
+
+        <div class="card-destaque swiper-slide">
+          <img src="" alt="Suítes 2" style="width:100%">
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Designer</p>
+          </div>
+        </div>
+        
+        <div class="card-destaque swiper-slide">
+          <img src="" alt="chalés 1" style="width:100%">
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Designer</p>
+          </div>
+        </div>
+
+        <div class="card-destaque swiper-slide">
+          <img src="" alt="chalés 2" style="width:100%">
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Designer</p>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="card">
-      <img src="" alt="Dormitorio 2" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="Suítes 1" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="Suítes 2" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="chalés 1" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="chalés 2" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="chalés 3" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="chalés 4" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Interior Designer</p>
-      </div>
-    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
   </div>
+
   <!-- #endregion -->
 
   <!-- #region Cards -->
@@ -162,6 +162,20 @@
     </div>
     <div class="card">
       <img src="" alt="Suítes 5" style="width:100%">
+      <div class="container">
+        <h4><b>Jane Doe</b></h4>
+        <p>Interior Designer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="" alt="chalés 3" style="width:100%">
+      <div class="container">
+        <h4><b>Jane Doe</b></h4>
+        <p>Interior Designer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="" alt="chalés 4" style="width:100%">
       <div class="container">
         <h4><b>Jane Doe</b></h4>
         <p>Interior Designer</p>
@@ -213,6 +227,8 @@
   <div class="Maps">
   </div>
   <!-- #endregion -->
+
+  <script src="./java/swiper-bundle.min.js"></script>
   <script src="./java/javaindex.js"></script>
 
   <div class="Contato">
