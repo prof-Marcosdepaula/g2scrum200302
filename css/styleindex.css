@@ -1,6 +1,7 @@
 /* #region Corpo */
 body {
-  margin: 0%;
+  font-family: Verdana, sans-serif;
+  margin: 0%
 }
 
 /* Style the header */
@@ -42,15 +43,6 @@ body {
 /* #endregion */
 
 /* #region Carrossel */
-* {
-  box-sizing: border-box
-}
-
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0
-}
-
 .mySlides {
   display: none
 }
