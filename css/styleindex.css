@@ -185,11 +185,6 @@ img {
   margin: 21px;
 }
 
-.imgdest{
-  width: 335px; 
-  height: 200px
-}
-
 .swiper-navBtn{
   color: #6E93f7;
   transition: color 0.3s ease;
@@ -238,11 +233,6 @@ img {
   padding: 10px;
   margin: 21px;
   max-height: 400px;
-}
-
-.imgcard{
-  width: 395px; 
-  height: 200px
 }
 
 .card:hover {
