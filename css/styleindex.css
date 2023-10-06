@@ -39,7 +39,6 @@ body {
   background-color: #ddd;
   color: black;
 }
-
 /* #endregion */
 
 /* #region Carrossel */
@@ -159,7 +158,6 @@ img {
     font-size: 11px
   }
 }
-
 /* #endregion */
 
 /* #region Destque */
@@ -187,7 +185,6 @@ img {
   margin: 21px;
 }
 
-
 .imgdest{
   width: 335px; 
   height: 200px
@@ -197,16 +194,20 @@ img {
   color: #6E93f7;
   transition: color 0.3s ease;
 }
+
 .swiper-navBtn:hover{
   color: #4070F4;
 }
+
 .swiper-navBtn::before,
 .swiper-navBtn::after{
   font-size: 35px;
 }
+
 .swiper-button-next{
   right: 0;
 }
+
 .swiper-button-prev{
   left: 0;
 }
@@ -257,7 +258,6 @@ img {
   height: 40%;
 }
 
-/* botão */
 .button {
   position: absolute;
   background-color: #00c3ff;
@@ -275,14 +275,10 @@ img {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-
 /* #endregion */
-
 
 /* #region maps */
 .Maps {
   width: 10%;
 }
-
 /* #endregion */
-
