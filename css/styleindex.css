@@ -6,6 +6,8 @@ body {
   background-attachment: fixed;
   background-size: 100%;
   font-family: Verdana, sans-serif;
+  margin: -21px;
+  overflow-x: hidden;
 }
 
 /* Style the header */
@@ -27,7 +29,7 @@ body {
   overflow: hidden;
   background-color: #10a8b3;
   text-align: center;
-  margin: -8px;
+  margin-top: -22px;
   padding-left: 390px;
 }
 
