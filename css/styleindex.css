@@ -1,10 +1,10 @@
 /* #region Corpo */
 body {
-  margin: 0%;
+  margin: 0;
   background-image: url("../img/aleatorio/Plano-Fundo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   font-family: Verdana, sans-serif;
   margin: 0%;
   overflow-x: hidden;
@@ -12,8 +12,10 @@ body {
 
 /* Style the header */
 .hearder {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
-  padding: 30px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -46,6 +48,7 @@ body {
   background-color: #ddd;
   color: black;
 }
+
 /* #endregion */
 
 /* #region Carrossel */
@@ -156,17 +159,18 @@ img {
     font-size: 11px
   }
 }
+
 /* #endregion */
 
 /* #region Destque */
 .destaque {
   margin-left: 3%;
   margin-right: 3%;
-  width: 94%;  
+  width: 94%;
   padding: 40px 0;
 }
 
-.slide-content{
+.slide-content {
   margin: 0 40px;
   overflow: hidden;
   border-radius: 25px;
@@ -186,36 +190,38 @@ img {
   background-color: #ddd;
 }
 
-.swiper-navBtn{
+.swiper-navBtn {
   color: #6E93f7;
   transition: color 0.3s ease;
 }
 
-.swiper-navBtn:hover{
+.swiper-navBtn:hover {
   color: #4070F4;
 }
 
 .swiper-navBtn::before,
-.swiper-navBtn::after{
+.swiper-navBtn::after {
   font-size: 35px;
 }
 
-.swiper-button-next{
+.swiper-button-next {
   right: 0;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   left: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content{
+  .slide-content {
     margin: 0 10px;
   }
-  .swiper-navBtn{
+
+  .swiper-navBtn {
     display: none;
   }
 }
+
 /* #endregion */
 
 /* #region Cards */
@@ -268,25 +274,36 @@ img {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
 /* #endregion */
 
 /* #region maps */
-footer {
-  padding: 10px;
-  text-align: center;
+footer{
+  max-height: 250px;
+  height: 250px;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 
-.Maps {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 32%;
-  border-radius: 5px;
+.maps {
+  max-height: 250px;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: 20px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;  
   float: left;
-  padding: 1%;
-  margin: 5px;
-  height: 100%;
-  max-height: 100%;
-  background-color: #ddd;  
-  background-color: white;
+  background-color: transparent;
+}
+
+.googleMaps{
+  margin: 20px;
+  width: 250px;
+  height: 85%;
 }
 /* #endregion */
