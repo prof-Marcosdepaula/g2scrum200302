@@ -1,79 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/stylecontato.css">
-    <title>Contatos</title>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-      body {font-family: Arial, Helvetica, sans-serif;}
-      * {box-sizing: border-box;}
-      
-      input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #000000;
-        border-radius: 6px;
-        box-sizing: border-box;
-        margin-top: 4px;
-        margin-bottom: 16px;
-        resize: vertical; 
-      }
-      
-      .enviar {
-        background-color: #04AA6D;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        border: 1px solid #000000
-      }
-      
-      .enviar:hover {
-        background-color: #45a049;
-      }
-      
-      .container {
-        border-radius: 6px;
-        background-color: #6495ED;
-        padding: 20px;
-      }
-      </style>
-      </head>
-      <body>
-      
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/stylecontato.css">
+  <title>Contatos</title>
+</head>
+
+<body>
+  <div class="contato" >    
+    <div class="container">
       <h3>Entre em Contato</h3>
-      
-      <div class="container">
-        <form action="/action_page.php">
-          <label for="fname">Nome</label>
-          <input type="text" id="fname" name="nome" placeholder="Seu nome..">
-      
-          <label for="lname">Sobrenome</label>
-          <input type="text" id="lname" name="Sobrenome" placeholder="Seu Sobrenome..">
-      
-          <label for="País">País</label>
-          <select id="País" name="País">
-            <option value="brasil">Brasil</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="assunto">Assunto</label>
-          <textarea id="assunto" name="assunto" placeholder="Assunto.." style="height:200px"></textarea>
-      
-          <input type="submit" class="enviar" value="Enviar">
-        </form>
-      </div>
-      
-      </body>
-    <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE" target="_blank">Clique aqui para enviar uma mensagem pelo WhatsApp</a>
+      <form action="/action_page.php">
+        <label for="fname">Nome</label>
+        <input type="text" id="fname" name="nome" placeholder="Seu nome..">
+
+        <label for="lname">Sobrenome</label>
+        <input type="text" id="lname" name="Sobrenome" placeholder="Seu Sobrenome..">
+
+        <label for="País">País</label>
+        <select id="País" name="País">
+          <option value="brasil">Brasil</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="assunto">Assunto</label>
+        <textarea id="assunto" name="assunto" placeholder="Assunto.." style="height:200px"></textarea>
+
+        <input type="submit" class="enviar" value="Enviar">
+      </form>
+    </div>
   </div>
-    
-    
+  <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE" target="_blank">Clique aqui para enviar uma mensagem
+    pelo WhatsApp</a>
 </body>
 </html>

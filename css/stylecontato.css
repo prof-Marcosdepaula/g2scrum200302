@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/aleatorio/Plano-Fundo.png");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contato{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.enviar {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #000000
+}
+
+.enviar:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 6px;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    padding: 5px 20px 15px 20px;
+}
