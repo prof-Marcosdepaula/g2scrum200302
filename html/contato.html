@@ -4,31 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/stylecontato.css">
     <title>Contatos</title>
-</head>
-<body>
-    <div class="Contato">
-    <h1>Fale com um Vendedor!</h1>
-    
-    <p>Por favor, preencha o formulário abaixo para entrar em contato conosco.</p>
-    
-    <form action="enviar_email.php" method="post">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
       
-      <label for="nome">Nome:</label>
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
       
-      <input type="text" id="nome" name="nome" required><br>
+      input[type=Enviar] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
       
-      <label for="email">E-mail:</label>
+      input[type=enviar]:hover {
+        background-color: #45a049;
+      }
       
-      <input type="email" id="email" name="email" required><br>
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      </style>
+      </head>
+      <body>
       
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea><br>
+      <h3>Entre em Contato</h3>
       
-      <input type="submit" value="Enviar Mensagem">
-    </form>
-    
-    <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE" target="_blank">Clique aqui para enviar uma mensagem no WhatsApp</a>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="nome" placeholder="Seu nome..">
+      
+          <label for="lname">Sobrenome</label>
+          <input type="text" id="lname" name="Sobrenome" placeholder="Seu Sobrenome..">
+      
+          <label for="País">País</label>
+          <select id="País" name="País">
+            <option value="brasil">Brasil</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="assunto">Assunto</label>
+          <textarea id="assunto" name="assunto" placeholder="Chora.." style="height:200px"></textarea>
+      
+          <input type="enviar" value="Enviar">
+        </form>
+      </div>
+      
+      </body>
+    <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE" target="_blank">Clique aqui para enviar uma mensagem pelo WhatsApp</a>
   </div>
     
     
