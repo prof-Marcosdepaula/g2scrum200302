@@ -2,11 +2,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resort</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="./css/styleindex.css">
+  <title>Resort</title>
 </head>
 
 <body>
@@ -265,7 +264,7 @@
   <!-- #region Maps -->
   <footer>
     <div class="maps">
-      <div class="googleMaps" id="googleMap"></div>
+      <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2041267.1013261138!2d72.60598038453512!3d2.2103318577568722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b599bfaafb7bbd%3A0x414509e181956289!2sMaldivas!5e0!3m2!1spt-BR!2sbr!4v1698367266607!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="links">
         <p><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</p>
         <p><i class="fa fa-instagram" aria-hidden="true"></i> Instagran</p>
@@ -273,21 +272,8 @@
       </div>
     </div>
 
-    <script>
-      function myMap() {
-        var mapProp = {
-          center: new google.maps.LatLng(51.508742, -0.120850),
-          zoom: 5,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-      }
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   </footer>
   <!-- #endregion -->
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   <script src="./java/swiper-bundle.min.js"></script>
   <script src="./java/javaindex.js"></script>
 </body>

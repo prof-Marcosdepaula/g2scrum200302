@@ -287,8 +287,8 @@ footer {
 }
 
 .maps {
-  max-height: 250px;
-  height: 250px;
+  max-height: 450px;
+  height: 450px;
   width: 100%;
   position: relative;
   bottom: 0;
@@ -298,19 +298,18 @@ footer {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   float: left;
-  background-color: transparent;
+  background-color: #10a8b3;
 }
 
 .googleMaps {
   margin: 20px 0px 0 100px;
-  width: 250px;
+  width: 400px;
   height: 85%;
 }
 
-.links {
+.links {  
   width: 70%;
   position: relative;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 0 0 0 400px;
+  margin: -380px 0 0 600px;
 }
 /* #endregion */
