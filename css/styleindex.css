@@ -272,7 +272,6 @@ img {
   cursor: pointer;
   border-radius: 8px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 /* #endregion */
@@ -281,6 +280,7 @@ img {
 footer {
   max-height: 250px;
   height: 250px;
+  width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
@@ -302,9 +302,15 @@ footer {
 }
 
 .googleMaps {
-  margin: 20px;
+  margin: 20px 0px 0 100px;
   width: 250px;
   height: 85%;
 }
 
+.links {
+  width: 70%;
+  position: relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0 0 0 400px;
+}
 /* #endregion */
