@@ -30,7 +30,7 @@ body {
   background-color: #10a8b3;
   text-align: center;
   margin-top: -22px;
-  padding-left: 390px;
+  padding-left: 20%;
 }
 
 /* Style the topnav menu */
@@ -278,7 +278,7 @@ img {
 /* #endregion */
 
 /* #region maps */
-footer{
+footer {
   max-height: 250px;
   height: 250px;
   position: relative;
@@ -296,14 +296,15 @@ footer{
   margin-top: 20px;
   border-radius: 5px 5px 0 0;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;  
+  transition: 0.3s;
   float: left;
   background-color: transparent;
 }
 
-.googleMaps{
+.googleMaps {
   margin: 20px;
   width: 250px;
   height: 85%;
 }
+
 /* #endregion */
