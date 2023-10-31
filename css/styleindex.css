@@ -312,4 +312,10 @@ footer {
   position: relative;
   margin: -380px 0 0 600px;
 }
+
+.url {
+  color: black;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 /* #endregion */
