@@ -1,10 +1,10 @@
 /* #region Corpo */
 body {
   margin: 0;
-  background-image: url("../img/aleatorio/Plano-Fundo.png");
+  background-image: url("https://raw.githubusercontent.com/prof-Marcosdepaula/g2scrum200302/main/img/aleatorio/Plano-Fundo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   font-family: Verdana, sans-serif;
   margin: -21px;
   overflow-x: hidden;
